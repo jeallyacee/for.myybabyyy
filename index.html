@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>from jea</title>
+
+<style>
+    body {
+    overflow: hidden;
+}
+
+.loader {
+  position: absolute;
+  background-color: white; 
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+
+  left: -100%; 
+  top: 0;
+
+  transition: 0.5s ease;
+}
+
+.loader img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#page1 {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgb(178, 205, 255);
+    text-align: center;
+    padding-top: 20%;
+    display: block;
+}
+
+#page2 {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    background-color: rgb(178, 205, 255);
+    background-repeat: no-repeat;
+    padding-top: 20%;
+    display: none;
+}
+
+
+#page3 {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgb(178, 205, 255);
+    position: absolute;
+    text-align: center;
+    display: none;
+    padding-top: 20%;
+}
+
+#page4 {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgb(178, 205, 255);
+    position: absolute;
+    text-align: center;
+    padding-top: 20%;
+    display: none;
+}
+
+#page5 {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgb(178, 205, 255);
+    position: absolute;
+    text-align: center;
+    padding-top: 15%;
+    display: none;
+}
+
+#page6 {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgb(178, 205, 255);
+    position: absolute;
+    text-align: center;
+    padding-top: 20%;
+    display: none;
+}
+
+#page7 {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgb(178, 205, 255);
+    position: absolute;
+    text-align: center;
+    display: none;
+}
+
+#page7 h4 {
+    background-color: rgba(240, 248, 255, 0.449);
+    border: 3px solid white;
+}
+
+</style>
+</head>
+
+ <body>
+<div class="loader" id="loader">
+    <img src="https://i.pinimg.com/736x/0e/0c/c9/0e0cc90b29b12ec35850417aad6199ba.jpg">
+</div>
+
+    <div class="page" id="page1">
+        <h1><p style="color:rgb(28, 16, 122)">are you ready to open the letter?</br></p></h1>
+        <h3>
+            <a onclick="goToPage('page1', 'page2')" style="color:darkblue; display:block; margin:10px; cursor:pointer;">yuppiee!</p></a>
+        </h3>
+    </div>
+
+    <div class="page" id="page2">
+    <h1><p style="color:darkblue">waittt, what is my favorite anime?</br></p></h1>
+        <h3>
+            <a onclick="goToPage('page2', 'page3')" style="color:darkblue; display:block; margin:10px; cursor:pointer;">Soul Eater</a>
+            <a onclick="goToPage('page2', 'page4')" style="color:darkblue; display:block; margin:10px; cursor:pointer;">Jujutsu Kaisen</a>
+        </h3>
+</div>
+
+    <div class="page" id="page3">
+    <h1><p style="color:darkblue">nicee!</br></p></h1>
+    <h3>
+        <a onclick="goToPage('page3', 'page5')" style="color:darkblue; display:block; margin:10px; cursor:pointer;">proceed</p></a></h3>
+</div>    
+
+<div class="page" id="page4">
+    <h3><p style="color:rgb(182, 0, 18)">u wronggg!</br></p></h3>
+    <h3>
+        <a onclick="goToPage('page4', 'page2')" style="color:darkblue; display:block; margin:10px; cursor:pointer;">back</p></a></h3>
+    </div>
+
+    <div class="page" id="page5">
+        <h1><p style="color:darkblue">okaizz last one ฅ^•ﻌ•^ฅ </br></p></h1>
+        <h1><p style="color:darkblue">do you think Jehan is cute? ( •᷄ᴗ•́)</p></h1>
+        <h3>
+            <a onclick="goToPage('page5', 'page6')" style="color:darkblue; display:block; margin:10px; cursor:pointer;"">yezuuu</a>
+            <a onclick="goToPage('page5', 'page6')" style="color:darkblue; display:block; margin:10px; cursor:pointer;"">yupp</a>
+        </h3>
+    </div>
+
+    <div class="page" id="page6">
+        <h1><p style="color: darkblue"> okaizz, click the flower please! </br></p></h1>
+        <a onclick="goToPage('page6', 'page7')" style="color:darkblue; display:block; margin:10px; cursor:pointer;">⊱✿⊰</p></a>
+    </div>
+
+    <div class="page" id="page7">
+        <h3><p style="color:#ed64c4">message from jea cutiepie</p></h3>
+        <h4><p style="color: darkblue;"> my one and only baby, Mhon </br>
+        </br>
+            Thank you for always understanding me. I never knew what</br>
+            real love felt like until I met you. I thought it was just</br>
+            when we feel butterflies or when two people talk every second</br> 
+            of the day, but no. You've made me think beyond that stereotype.</br> 
+            That real love grows when we experience real struggles and not </br>
+            just the lovey dovey experiences. That love grows when it is </br>
+            watered with patience, forgiveness, and honesty consistently and</br> 
+            wholeheartedly. Mhon, you've said this to me before but I want</br>
+            to say it aswell, I know in the future we would have misunderstandings</br>
+            and arguments but let's promise each other that both of us will</br> 
+            try our very best to resolve it. As for every obstacle we face is a test</br>
+            if our bond is unshakeable. I am very much sure of you, baby. When I grow</br> 
+            up, I want it to be you who I will be with when I want to travel, try new</br> 
+            things, and to explore countless activities. Never doubt my love for you</br> 
+            because I am ready to drop everything I have if it means being with you.</br> 
+            I never just want to be your partner, I want to be someone you can lean on,</br> 
+            your safe space, your peace, and your home. No words could ever express</br> 
+            how grateful I am to have you. The efforts you gave, the words you speak, the</br> 
+            things you do that makes me happy (even though you probably never realized it),</br> 
+            I am forever a blessed girl for having you. I just know that the little girl</br> 
+            in me is happy when she knows that I am with a man that loves her just</br>
+            for being her. Also, please never think that I will have eyes for other</br> 
+            men because in my eyes, you are the only one worthy looking at. You are sooooo</br> 
+            handsome my baby, always remember that. You are strong and is capable of being</br>
+            resilient for whatever life throws on you. My Mhon, stay genuine and kindhearted.</br> 
+            I will always be beside you cheering for your success and while you are achieving</br> 
+            your dreams. In whatever you do, always stay humble and joyous as you are</br> 
+            now. I love you always, in all ways my love. I am forever thankful to have you.</br> 
+            I love you.</br></p>
+     </h4>
+    </div>
+
+   <script>
+function goToPage(current, next) {
+    const loader = document.getElementById("loader");
+    const currentPage = document.getElementById(current);
+    const nextPage = document.getElementById(next);
+
+    loader.style.left = "0";
+
+    setTimeout(() => {
+    currentPage.style.display = "none";
+    nextPage.style.display = "block";
+
+    setTimeout(() => {
+        loader.style.left = "-100%";
+    }, 50);
+}, 600);
+}
+
+
+</script>
+    
